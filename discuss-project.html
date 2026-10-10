@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tell Management Solutions about your Sage 50, Xero, mobile, POS or cloud software project.">
+  <title>Discuss Your Project | Management Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Management Solutions home"><svg class="brand-mark" viewBox="0 0 110 54" aria-hidden="true"><path d="M3 20c0-22 34-22 34 0v14c0 22 34 22 34 0V20c0-22 34-22 34 0"/><path d="M9 20c0-14 22-14 22 0v14c0 30 46 30 46 0V20c0-14 22-14 22 0"/><path d="M15 20c0-6 10-6 10 0v14c0 38 58 38 58 0V20c0-6 10-6 10 0"/></svg><span><b>Management</b> Solutions</span></a>
+    <a class="back-link" href="index.html">← Back to homepage</a>
+  </header>
+  <main class="project-page">
+    <section class="project-intro">
+      <p class="eyebrow">Let’s build something that fits</p>
+      <h1>Discuss your project</h1>
+      <p>Tell us a little about your business and the problem you want to solve. We’ll review your requirements and get back to you for an initial, no-obligation conversation.</p>
+      <div class="contact-highlights"><span><b>Practical advice</b><small>Clear guidance from experienced developers</small></span><span><b>No hard sell</b><small>A useful first conversation about your needs</small></span><span><b>UK-based support</b><small>Long-term help from people who know your system</small></span></div>
+    </section>
+    <section class="form-panel" aria-labelledby="form-title">
+      <h2 id="form-title">Tell us about your requirements</h2>
+      <p class="form-note">Fields marked * are required.</p>
+      <form id="project-form" novalidate>
+        <input type="text" name="website" class="bot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" id="form-started" name="form_started">
+        <div class="form-grid">
+          <label>Full name *<input name="name" type="text" autocomplete="name" required maxlength="100"></label>
+          <label>Company name<input name="company" type="text" autocomplete="organization" maxlength="120"></label>
+          <label>Email address *<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+          <label>Telephone number<input name="phone" type="tel" autocomplete="tel" maxlength="30"></label>
+          <label>What can we help with? *<select name="service" required><option value="">Please select</option><option>Sage 50 development or integration</option><option>Xero integration</option><option>Mobile application</option><option>POS or retail system</option><option>SQL or Microsoft Azure</option><option>Web application or customer portal</option><option>Existing system support</option><option>Something else</option></select></label>
+          <label>Approximate timescale<select name="timescale"><option value="">Not sure yet</option><option>As soon as possible</option><option>Within 1–3 months</option><option>Within 3–6 months</option><option>More than 6 months</option></select></label>
+          <label class="full">Tell us about your project *<textarea name="details" rows="7" required minlength="20" maxlength="3000" placeholder="What challenge are you trying to solve? Please include any existing software or systems that need to connect."></textarea><small class="count">0 / 3000</small></label>
+        </div>
+        <fieldset class="human-check"><legend>Human verification *</legend><p>To help us prevent automated spam, please answer this quick question:</p><label id="challenge-label" for="challenge"></label><input id="challenge" name="challenge" type="number" inputmode="numeric" required autocomplete="off"></fieldset>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>I agree that Management Solutions may use these details to respond to my enquiry. *</span></label>
+        <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+        <button class="button submit-button" type="submit">Send Project Enquiry <span>→</span></button>
+      </form>
+    </section>
+  </main>
+  <footer class="project-footer"><span>© 2026 Management Solutions Ltd.</span><a href="mailto:enquiries@mansol.com">enquiries@mansol.com</a></footer>
+  <script src="project-form.js"></script>
+</body>
+</html>

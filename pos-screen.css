@@ -1,0 +1,19 @@
+.pos-screen-graphic {
+  margin: 0;
+  justify-self: center;
+  width: min(100%, 660px);
+  padding: 12px;
+  border: 1px solid #d3e2ec;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 25px 60px rgba(18, 62, 105, .22);
+  transform: rotate(1deg);
+}
+.pos-screen-graphic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+}
+@media(max-width:900px){.pos-screen-graphic{justify-self:start;max-width:660px;transform:none}}
+@media(max-width:620px){.pos-screen-graphic{padding:7px;border-radius:11px}}
