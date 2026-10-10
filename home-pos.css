@@ -8,6 +8,17 @@
   transform: perspective(700px) rotateY(-7deg) rotateZ(-1deg);
   overflow: hidden;
 }
+.sage-dashboard-monitor {
+  overflow: visible;
+}
+.sage-dashboard-monitor > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 2px;
+}
 .home-pos-terminal img {
   display: block;
   width: 100%;
@@ -26,6 +37,20 @@
   object-fit: cover;
   object-position: center;
 }
+.propos-card-link {
+  display: block;
+}
+.propos-card-link img {
+  transition: transform .25s ease;
+}
+.propos-card-link:hover img,
+.propos-card-link:focus-visible img {
+  transform: scale(1.025);
+}
+.card-copy .external-card-link {
+  margin-left: 16px;
+}
+@media(max-width:420px){.card-copy .external-card-link{display:block;margin:8px 0 0}}
 @media(max-width:1050px){.hero-visual .pos.home-pos-terminal{width:255px}}
 @media(max-width:760px){.hero-visual .pos.home-pos-terminal{width:205px;height:auto;padding:4px;border-width:5px}}
 @media(max-width:400px){.hero-visual .pos.home-pos-terminal{width:180px}}
