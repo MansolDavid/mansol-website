@@ -40,4 +40,4 @@ npx @azure/static-web-apps-cli deploy . --deployment-token "YOUR_AZURE_DEPLOYMEN
 
 ## Before going live
 
-Replace the placeholder telephone number and confirm the contact email and Chelmsford address in `index.html`. The contact button currently opens the visitor's email application.
+The published contact details are +44 20 8191 9158, enquiries@mansol.com and London, UK. The contact button currently opens the visitor's email application.

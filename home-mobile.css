@@ -1,0 +1,32 @@
+.hero-visual .home-mobile-device {
+  position: absolute;
+  left: 5%;
+  bottom: 12px;
+  z-index: 4;
+  transform: scale(.64) rotate(-2deg);
+  transform-origin: left bottom;
+}
+.mobile-art.stock-preview-art {
+  background: linear-gradient(135deg,#dcebf4,#f5f9fc);
+}
+.mobile-art.stock-preview-art::after {
+  display: none;
+}
+.card-mobile-device {
+  position: absolute;
+  left: 50%;
+  bottom: -58px;
+  z-index: 3;
+  transform: translateX(-50%) scale(.52);
+  transform-origin: center bottom;
+}
+.home-mobile-device.phone-symbol.mobile-preview,
+.card-mobile-device.phone-symbol.mobile-preview {
+  margin: 0;
+}
+.card-mobile-device.phone-symbol.mobile-preview {
+  position: absolute;
+}
+@media(max-width:1050px){.hero-visual .home-mobile-device{left:2%;transform:scale(.57) rotate(-2deg)}}
+@media(max-width:760px){.hero-visual .home-mobile-device{left:3%;bottom:4px;transform:scale(.46) rotate(-2deg)}.card-mobile-device{bottom:-70px;transform:translateX(-50%) scale(.48)}}
+@media(max-width:400px){.hero-visual .home-mobile-device{transform:scale(.42) rotate(-2deg)}}
